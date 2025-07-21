@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>EffectEditor</ProjectName>
+    <ProjectGuid>{C2FFF408-0149-47D2-8D1E-B9D66DF6ECC3}</ProjectGuid>
+    <RootNamespace>EffectEditer</RootNamespace>
+    <SccProjectName>"$/tool/EffectEditor2", UQFAAAAA</SccProjectName>
+    <SccAuxPath />
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.32830.301</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\client\bin\</OutDir>
+    <IntDir>..\obj\debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\client\bin\</OutDir>
+    <IntDir>..\obj\release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHa %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../sdk/include;../../../../util/include;..\src\plus;..\src\ui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MINDPOWER_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../../../sdk/lib/MindPower3D_D8R.LIB;../../../../util/lib/util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libci.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../sdk/include;../../../../util/include;..\src\plus;..\src\ui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MINDPOWER_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../../../sdk/lib/MindPower3D_D8R.LIB;../../../../util/lib/util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libci.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\d3d\d3dfont.cpp" />
+    <ClCompile Include="..\src\d3d\D3DGlobal.cpp" />
+    <ClCompile Include="..\src\d3d\d3dutil.cpp" />
+    <ClCompile Include="..\src\d3d\dsutil.cpp" />
+    <ClCompile Include="..\src\d3d\dxutil.cpp" />
+    <ClCompile Include="..\src\plus\Camera.cpp" />
+    <ClCompile Include="..\src\plus\Coordinates.cpp" />
+    <ClCompile Include="..\src\plus\DXInput.cpp" />
+    <ClCompile Include="..\src\plus\IniFile.cpp" />
+    <ClCompile Include="..\src\plus\MeshPlane.cpp" />
+    <ClCompile Include="..\src\Ui\DlgEditCoord.cpp" />
+    <ClCompile Include="..\src\Ui\DlgEditTexture.cpp" />
+    <ClCompile Include="..\src\Ui\DlgModelParam.cpp" />
+    <ClCompile Include="..\src\Ui\DlgNewEffect.cpp" />
+    <ClCompile Include="..\src\Ui\DlgOption.cpp" />
+    <ClCompile Include="..\src\Ui\DlgPartEdit.cpp" />
+    <ClCompile Include="..\src\Ui\SkinMeshDlg.cpp" />
+    <ClCompile Include="DumpWater.cpp" />
+    <ClCompile Include="EffectEditer.cpp" />
+    <ClCompile Include="EffectEditerDoc.cpp" />
+    <ClCompile Include="EffectEditerView.cpp" />
+    <ClCompile Include="kwThread.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestScripts.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\d3d\d3dfont.h" />
+    <ClInclude Include="..\src\d3d\D3DGlobal.h" />
+    <ClInclude Include="..\src\d3d\d3dutil.h" />
+    <ClInclude Include="..\src\d3d\dsutil.h" />
+    <ClInclude Include="..\src\d3d\dxutil.h" />
+    <ClInclude Include="..\src\plus\Camera.h" />
+    <ClInclude Include="..\src\plus\Coordinates.h" />
+    <ClInclude Include="..\src\plus\DXInput.h" />
+    <ClInclude Include="..\src\plus\IniFile.h" />
+    <ClInclude Include="..\src\plus\MeshPlane.h" />
+    <ClInclude Include="..\src\Ui\DlgEditCoord.h" />
+    <ClInclude Include="..\src\Ui\DlgEditTexture.h" />
+    <ClInclude Include="..\src\Ui\DlgModelParam.h" />
+    <ClInclude Include="..\src\Ui\DlgNewEffect.h" />
+    <ClInclude Include="..\src\Ui\DlgOption.h" />
+    <ClInclude Include="..\src\Ui\DlgPartEdit.h" />
+    <ClInclude Include="..\src\Ui\SkinMeshDlg.h" />
+    <ClInclude Include="DumpWater.h" />
+    <ClInclude Include="EffectEditer.h" />
+    <ClInclude Include="EffectEditerDoc.h" />
+    <ClInclude Include="EffectEditerView.h" />
+    <ClInclude Include="FloatSSE.h" />
+    <ClInclude Include="kwThread.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TestScripts.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\EffectEditer.ico" />
+    <Image Include="res\EffectEditerDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EffectEditer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\EffectEditer.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\EffectEditer.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="EffectEditer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="d3d">
+      <UniqueIdentifier>{1c803f84-97f6-4668-82dd-193a461be9df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plus">
+      <UniqueIdentifier>{9935211c-30ce-4f49-b25a-82fe35d58fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{bfabd1a0-cc4e-451c-80dd-7713a600296b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DumpWater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectEditer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectEditerDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectEditerView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kwThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d\d3dfont.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d\D3DGlobal.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d\d3dutil.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d\dsutil.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d\dxutil.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plus\Camera.cpp">
+      <Filter>plus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plus\Coordinates.cpp">
+      <Filter>plus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plus\DXInput.cpp">
+      <Filter>plus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plus\IniFile.cpp">
+      <Filter>plus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plus\MeshPlane.cpp">
+      <Filter>plus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Ui\DlgEditCoord.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Ui\DlgEditTexture.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Ui\DlgModelParam.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Ui\DlgNewEffect.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Ui\DlgOption.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Ui\DlgPartEdit.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Ui\SkinMeshDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DumpWater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectEditer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectEditerDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectEditerView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatSSE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kwThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScripts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\d3d\d3dfont.h">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\d3d\D3DGlobal.h">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\d3d\d3dutil.h">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\d3d\dsutil.h">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\d3d\dxutil.h">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plus\Camera.h">
+      <Filter>plus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plus\Coordinates.h">
+      <Filter>plus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Ui\DlgNewEffect.h">
+      <Filter>plus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plus\DXInput.h">
+      <Filter>plus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plus\IniFile.h">
+      <Filter>plus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plus\MeshPlane.h">
+      <Filter>plus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Ui\DlgEditCoord.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Ui\DlgEditTexture.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Ui\DlgModelParam.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Ui\DlgOption.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Ui\DlgPartEdit.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Ui\SkinMeshDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\EffectEditer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\EffectEditerDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EffectEditer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\EffectEditer.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\EffectEditer.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
